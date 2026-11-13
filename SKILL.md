@@ -31,6 +31,10 @@ The user is usually a designer who talks in plain language. Report in the langua
 
 Go through the flow the way a person would, step by step, including the unhappy paths: cancel halfway, wrong input, slow network, no data yet, a lot of data, come back later. Note every place where the person has to stop and think, guess, wait without feedback, or cannot undo.
 
+### 2b. Find where else this lives (always)
+
+Search the code for every other screen, channel, version, entry point and state that has the same thing: the same component opened from another page, the same option in another channel (email, SMS, push...), the same text, the same data. A fix on one screen that leaves the others behind makes the product inconsistent. List them in the report under **Где ещё**, with whether each has the same problem. If there is nothing, say what you searched.
+
 ### 3. Check the five areas
 
 Read only the reference you need for the screen in front of you.
@@ -68,6 +72,7 @@ Use exactly this shape, in the user's language:
    Как исправить: <concrete change, naming the Rule component to use>
 2. [3] ...
 
+**Где ещё:** <other screens, channels, entry points and states with the same thing, and whether each has the same problem; or "больше нигде нет" and what you searched>
 **В порядке:** <areas that are fine, one line>
 **Не проверил:** <what you could not check and why, or "всё проверил">
 ```
@@ -89,3 +94,4 @@ When a prototype was just built and the user did not ask for a full review, run 
 3. Destructive or irreversible actions confirmed or undoable?
 4. Every button says what it does?
 5. Long names, zero items and large numbers do not break it?
+6. Every other screen, channel and state with the same thing got the same change, or is listed as not changed?
