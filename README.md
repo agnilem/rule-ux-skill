@@ -1,5 +1,7 @@
 # Rule UX
 
+> **No longer updated here.** Rule team: the current version installs together with the other product design skills from Rule's GitHub.
+
 A Claude skill that reviews how a Rule screen works for a person: clarity, states, forms, words. It has no opinion on visual style.
 
 ## Install
